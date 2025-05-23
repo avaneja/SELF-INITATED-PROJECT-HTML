@@ -1,0 +1,56 @@
+
+<!-- Personal Dashboard HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>My Morning Boost</title>
+   <link rel="stylesheet" href="styles/main.css" />
+   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+   <div class="dashboard">
+       <!-- Header Section -->
+       <header class="header">
+           <h1 id="greeting">Good Morning, Friend!</h1>
+           <p id="time">--:--</p>
+       </header>
+
+       <!-- Weather Section -->
+       <section class="weather">
+           <h2><i class="fas fa-cloud-sun"></i> Today's Forecast</h2>
+           <p id="weather">Loading...</p>
+       </section>
+
+       <!-- To-Do List Section -->
+       <section class="todo">
+           <h2><i class="fas fa-tasks"></i> My Tasks</h2>
+           <input type="text" id="new-task" placeholder="Add a new task" />
+           <button class="add-btn" onclick="addTask()">Add Task</button>
+           <ul id="task-list"></ul>
+       </section>
+
+       <!-- Motivational Quote Section -->
+       <section class="quote">
+           <h2><i class="fas fa-quote-left"></i> Daily Dose of Motivation</h2>
+           <blockquote id="quote">Fetching quote...</blockquote>
+           <button class="quote-btn" onclick="getQuote()">New Quote</button>
+       </section>
+
+       <!-- Customize Section -->
+       <section class="customize">
+           <h2><i class="fas fa-palette"></i> Customize Your Experience</h2>
+           <button class="dark-mode-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+       </section>
+
+       <!-- Footer Section -->
+       <footer class="footer">
+           <p>Made with <i class="fas fa-heart"></i> by [Your Name] | Powered by OpenWeatherMap & Quotable</p>
+       </footer>
+   </div>
+   <script src="scripts/main.js"></script>
+</body>
+</html>
+ 
